@@ -50,6 +50,12 @@ namespace Class_work_1
             int[] array = new int[size];
             RandomArray(array);
             PrintArray(array);
+            Avg(array);
+            Console.WriteLine($"{ Avg(array)}");
+            Max(array);
+            Console.WriteLine($"{ Max(array)}");
+            Min(array);
+            Console.WriteLine($"{ Min(array)}");
         }
         static void RandomArray(int[] array)
         {
@@ -66,6 +72,33 @@ namespace Class_work_1
                 Console.Write($"{item}\t");
             }
             Console.WriteLine();
+        }
+        static double Avg(int[] array)
+        {
+            int sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum = sum + array[i];
+            }
+            return sum / (double)array.Length;
+        }
+        static int Max(int[] array)
+        {
+            int max = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (max < array[i]) max = array[i];
+            }
+            return max;
+        }
+        static int Min(int[] array)
+        {
+            int min = array[0];
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (min > array[i]) min = array[i];
+            }
+            return min;
         }
     }
 }
