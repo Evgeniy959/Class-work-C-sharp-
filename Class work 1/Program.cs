@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Class_work_1
 {
@@ -52,10 +53,15 @@ namespace Class_work_1
             PrintArray(array);
             Avg(array);
             Console.WriteLine($"{ Avg(array)}");
-            Max(array);
+            /*Max(array);
             Console.WriteLine($"{ Max(array)}");
             Min(array);
-            Console.WriteLine($"{ Min(array)}");
+            Console.WriteLine($"{ Min(array)}");*/
+            Console.WriteLine($"{ array.Sum()}");
+            Console.WriteLine($"{ array.Average()}");
+            //var max = array.Max();
+            Console.WriteLine($"{ array.Max()}");
+            Console.WriteLine($"{ array.Min()}");    
         }
         static void RandomArray(int[] array)
         {
@@ -82,7 +88,7 @@ namespace Class_work_1
             }
             return sum / (double)array.Length;
         }
-        static int Max(int[] array)
+        /*static int Max(int[] array)
         {
             int max = 0;
             for (int i = 0; i < array.Length; i++)
@@ -99,7 +105,7 @@ namespace Class_work_1
                 if (min > array[i]) min = array[i];
             }
             return min;
-        }
+        }*/
     }
 }
   
