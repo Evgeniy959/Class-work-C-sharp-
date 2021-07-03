@@ -14,7 +14,7 @@ namespace ConsoleApp1
 
             PrintDictionary(addressBook);
             Console.WriteLine();
-            
+
             PrintSortDictionary(addressBook);
         }
 
@@ -36,11 +36,23 @@ namespace ConsoleApp1
                 Console.WriteLine($"{key}: {dictionary[key]}");
             }
         }
-        /*Задание.Телефонный справочник
-Написать программу по созданию и редактированию телефонного справочника.
-Должен хранится номер телефона и имя человека.
-Программа должна уметь добавлять новый номер, редактировать старый, удалять и искать по номеру телефона кому он принадлежит.*/
+        /*static void Main()
+        {
+            
+            var PhoneBook = new Dictionary<string, string>();
+            PhoneBook.Add("Номер телефона", "Имя");
+            
+ ​
+            PrintDictionary(PhoneBook);
+            Console.WriteLine();
+        }
 
+        static void PrintDictionary(Dictionary<string, string> dictionary)
+        {
+            foreach (var element in dictionary)
+            {
+                Console.WriteLine($"{element.Key}: {element.Value}");
+            }
+        }*/
     }
 }
- 

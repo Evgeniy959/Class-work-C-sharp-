@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace Class_work__C_sharp_
 {
     class Program
